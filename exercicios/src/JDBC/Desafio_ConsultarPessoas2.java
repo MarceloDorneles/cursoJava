@@ -37,10 +37,10 @@ public class Desafio_ConsultarPessoas2 {
 				obj = "%" + frag + "%";
 			} else if (comp.equalsIgnoreCase("Termina".trim())) {
 				obj = "%" + frag;
-			} 
+			}
 			
 			PreparedStatement stmt = conexao.prepareStatement(sql);
-			stmt.setString(1, obj);
+    			stmt.setString(1, obj);
 			ResultSet resultado = stmt.executeQuery();
 
 			List<Pessoa> pessoas = new ArrayList<>();
